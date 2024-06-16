@@ -1,6 +1,6 @@
 import { connect } from "mongoose";
 
-const db_URI='mongodb://localhost:27017/inventory'
+const db_URI=process.env.DatabaseURI || 'mongodb://localhost:27017/inventory'
 const connectToDatabase=async()=>{
     try { 
         await connect(db_URI);

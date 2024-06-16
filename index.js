@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 import express from 'express';
 import orders from './Routes/orders.js';
 import inventory from './Routes/inventory.js';
